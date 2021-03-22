@@ -24,3 +24,7 @@ Route::get('/home', function () {
 Route::get('/abc', function () {
     return 'ABC';
 });
+
+Route::get('/qwe', function () {
+    return 'qwe';
+});
