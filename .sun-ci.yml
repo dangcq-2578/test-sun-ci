@@ -1,0 +1,8 @@
+stages:
+  - test
+jobs:
+  - name: test:node
+    stage: test
+    image: node:12-alpine
+    script:
+    - yarn
