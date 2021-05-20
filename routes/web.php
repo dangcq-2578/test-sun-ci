@@ -1,6 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use \Firebase\JWT\JWT;
+use Carbon\Carbon;
 
 /*
 |--------------------------------------------------------------------------
@@ -22,5 +24,14 @@ Route::get('/home', function () {
 });
 
 Route::get('/abc', function () {
-    return 'ABC';
+    $privateKey = Storage::disk('local')->get('app.pem');
+
+    $payload = array(
+        "iat" => Carbon::now()->addMinutes(1)->timestamp,
+        "iss" => 112548,
+        "exp" => Carbon::now()->addMinutes(5)->timestamp,
+    );
+
+    $jwt = JWT::encode($payload, $privateKey, 'RS256');
+    dd($jwt);
 });
