@@ -1,0 +1,14 @@
+[33m7b1919f[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m)[m feat(api): api
+[33m069d1a7[m[33m ([m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m)[m Merge pull request #10 from dangcq-1093/github_app
+[33m60b5056[m Update .sun-ci.yml
+[33m54c10e2[m[33m ([m[1;31morigin/github_app[m[33m, [m[1;32mgithub_app[m[33m)[m feat(api): using Github App access token
+[33mebdd112[m chore(ci): add .sun-ci.yml
+[33m37e4642[m Delete .sun-ci.yml
+[33mb58550d[m chore(ci): add .sun-ci.yml
+[33m84593b3[m Delete .sun-ci.yml
+[33m058dc86[m Merge pull request #2 from dangcq-1093/test1
+[33m727937a[m[33m ([m[1;31morigin/test1[m[33m, [m[1;32mtest1[m[33m)[m ABC
+[33mdf019be[m Merge pull request #1 from dangcq-1093/test1
+[33ma84e064[m hehe
+[33m64a9ab7[m Create .sun-ci.yml
+[33mf38c8dd[m init to test SunCI
