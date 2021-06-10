@@ -35,3 +35,7 @@ Route::get('/abc', function () {
     $jwt = JWT::encode($payload, $privateKey, 'RS256');
     dd($jwt);
 });
+
+Route::get('/github-app', function() {
+    return 'Hello World!';
+});
