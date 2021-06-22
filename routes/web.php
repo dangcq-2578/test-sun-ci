@@ -34,4 +34,6 @@ Route::get('/abc', function () {
 
     $jwt = JWT::encode($payload, $privateKey, 'RS256');
     dd($jwt);
+    dd($jwt);
+    dd($jwt);
 });
