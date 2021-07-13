@@ -55,3 +55,7 @@ jobs:
   script:
   - sleep 10
   - echo Byeee!
+  
+release:
+    environment: production
+    url: https://ci.sun-asterisk.com
