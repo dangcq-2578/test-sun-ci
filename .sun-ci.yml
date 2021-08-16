@@ -6,14 +6,18 @@ stages:
 - Test
 
 jobs:
-- name: Run tests
+- name: RecipeConfig
   stage: Build
-  image: alpine
-  workspace: shared
-  services:
-  - redis:alpine
-  script:
-  - echo Hello
+  use: deploy
+  with:
+    privateKey: this_is_private_key
+    hostIP: this is host IP
+    only:
+      branches: master
+    except:
+      events:
+      - push
+      - tag
 
 - name: Sleep
   stage: Build
