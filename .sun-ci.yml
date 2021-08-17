@@ -6,19 +6,6 @@ stages:
 - Test
 
 jobs:
-- name: RecipeConfig
-  stage: Build
-  use: deploy
-  with:
-    privateKey: this_is_private_key
-    hostIP: this is host IP
-    only:
-      branches: master
-    except:
-      events:
-      - push
-      - tag
-
 - name: Sleep
   stage: Build
   image: alpine
