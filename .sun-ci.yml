@@ -8,7 +8,7 @@ stages:
 jobs:
 - name: RecipeConfig
   stage: Build
-  use: deploy
+  use: PHPTest@1.0.0
   with:
     privateKey: this_is_private_key
     hostIP: this is host IP
@@ -16,7 +16,6 @@ jobs:
       branches: master
     except:
       events:
-      - push
       - tag
 
 - name: Sleep
