@@ -37,7 +37,7 @@ jobs:
   stage: Test
   image: sunasteriskrnd/php-workspace:7.4
   script:
-  - composer sniff -d app
+  - composer sniff
 
 - name: Say bye!
   stage: Test
