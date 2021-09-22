@@ -37,5 +37,4 @@ Route::get('/abc', function () {
     dd($jwt);
     dd($jwt);
     dd($jwt);
-    dd($jwt);
 });
