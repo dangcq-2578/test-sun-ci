@@ -43,6 +43,12 @@ jobs:
   image: alpine
   script:
   - sleep 10
+  
+- name: PHP CodeSniffer
+  stage: Test
+  image: sunasteriskrnd/php-workspace:7.4
+  script:
+  - composer sniff -d api
 
 - name: Say bye!
   stage: Test
