@@ -36,8 +36,10 @@ jobs:
 - name: PHP CodeSniffer
   stage: Test
   image: sunasteriskrnd/php-workspace:7.4
+  before_script:
+  - composer install
   script:
-  - composer sniff
+  - ./vendor/bin/phpcs ./app ./config -p
 
 - name: Say bye!
   stage: Test
@@ -53,3 +55,4 @@ jobs:
   script:
   - sleep 10
   - echo Byeee!
+
