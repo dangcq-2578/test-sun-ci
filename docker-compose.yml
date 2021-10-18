@@ -4,11 +4,9 @@ networks:
   laravel:
 
 services:
-  php:
-    build:
-      context: .
-      dockerfile: Dockerfile
-    container_name: php-laravel
+  app:
+    image: docker/laravel:v1
+    restart: unless-stopped
     volumes:
       - ./:/var/www/html
     ports:
