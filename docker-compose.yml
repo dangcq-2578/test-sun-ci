@@ -1,31 +1,8 @@
 version: '3.9'
 
-networks:
-  laravel:
-
 services:
   app:
     image: docker/laravel:v1
     restart: unless-stopped
     volumes:
       - ./:/var/www/html
-    ports:
-      - "9000:9000"
-    networks:
-      - laravel
-
-  mysql:
-    image: mysql:5.7.22
-    container_name: mysql-laravel
-    restart: unless-stopped
-    ports:
-      - "4306:3306"
-    volumes:
-      - ./mysql:/var/lib/mysql
-    environment: 
-      MYSQL_DATABASE: laravel
-      MYSQL_USER: admin
-      MYSQL_PASSWORD: secret
-      MYSQL_ROOT_PASSWORD: secret
-    networks:
-      - laravel
