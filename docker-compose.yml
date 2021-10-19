@@ -6,3 +6,4 @@ services:
     restart: unless-stopped
     volumes:
       - ./:/var/www/html
+      - /var/run/docker.sock:/var/run/docker.sock
