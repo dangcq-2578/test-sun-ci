@@ -4,6 +4,3 @@ services:
   app:
     image: docker/laravel:v1
     restart: unless-stopped
-    volumes:
-      - ./:/var/www/html
-      - /var/run/docker.sock:/var/run/docker.sock
