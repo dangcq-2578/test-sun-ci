@@ -2,7 +2,10 @@ version: '3.9'
 
 services:
   app:
-    image: docker/laravel:v1
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: php-laravel
     restart: unless-stopped
     volumes:
       - ./:/var/www/html
