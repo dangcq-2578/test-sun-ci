@@ -73,11 +73,4 @@ class UnitTest extends TestCase
         $this->assertFalse(false);
         $this->assertEquals([], []);
     }
-
-    public function testSuperBasic6()
-    {
-        $this->assertTrue(true);
-        $this->assertFalse(false);
-        $this->assertEquals([], []);
-    }
 }
