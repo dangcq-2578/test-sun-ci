@@ -40,12 +40,12 @@ jobs:
   - composer install
   script:
   - ./vendor/bin/phpcs ./app ./config -p
-  test_result:
-    type: junit
-    path: coverage.xml
+  coverage:
+    type: clover
+    path: ./coverage.xml
   artifacts:
     paths:
-    - coverage
+    - ./coverage
     expires_in: 3 days
 
 - name: Say bye!
