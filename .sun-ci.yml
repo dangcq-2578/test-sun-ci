@@ -40,6 +40,13 @@ jobs:
   - composer install
   script:
   - ./vendor/bin/phpcs ./app ./config -p
+  coverage:
+    type: junit
+    path: coverage.xml
+  artifacts:
+    paths:
+    - coverage
+    expires_in: 3 days
 
 - name: Say bye!
   stage: Test
