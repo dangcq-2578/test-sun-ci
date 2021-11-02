@@ -1,36 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuites>
-    <testsuite name="test/fixtures/tests/" tests="7" skipped="0" assertions="6" failures="2" errors="1" time="0.007625">
-        <testsuite name="UnitTestWithClassAnnotationTest" tests="3" assertions="3" failures="1" errors="0" time="0.006109" file="/home/brian/Projects/parallel-phpunit/test/fixtures/tests/UnitTestWithClassAnnotationTest.php">
-            <testcase name="testTruth" class="UnitTestWithClassAnnotationTest" file="/home/brian/Projects/parallel-phpunit/test/fixtures/tests/UnitTestWithClassAnnotationTest.php" line="10" assertions="1" time="0.001760"/>
-            <testcase name="testFalsehood" class="UnitTestWithClassAnnotationTest" file="/home/brian/Projects/parallel-phpunit/test/fixtures/tests/UnitTestWithClassAnnotationTest.php" line="18" assertions="1" time="0.001195">
-                <failure type="PHPUnit\Framework\ExpectationFailedException">UnitTestWithClassAnnotationTest::testFalsehood
-                    Failed asserting that true is false.
-
-                    /home/brian/Projects/parallel-phpunit/test/fixtures/tests/UnitTestWithClassAnnotationTest.php:20
-                </failure>
-            </testcase>
-            <testcase name="testArrayLength" class="UnitTestWithClassAnnotationTest" file="/home/brian/Projects/parallel-phpunit/test/fixtures/tests/UnitTestWithClassAnnotationTest.php" line="26" assertions="1" time="0.003154"/>
-        </testsuite>
-        <testsuite name="UnitTestWithErrorTest" file="/home/brian/Projects/parallel-phpunit/test/fixtures/tests/UnitTestWithErrorTest.php" tests="1" assertions="0" failures="0" errors="1" time="0.000397">
-            <testcase name="testTruth" class="UnitTestWithErrorTest" file="/home/brian/Projects/parallel-phpunit/test/fixtures/tests/UnitTestWithErrorTest.php" line="" assertions="0" time="0.000397">
-                <error type="Exception">UnitTestWithErrorTest::testTruth
-                    Exception: Error!!!
-
-                    /home/brian/Projects/parallel-phpunit/test/fixtures/tests/UnitTestWithErrorTest.php:12
-                </error>
-            </testcase>
-        </testsuite>
-        <testsuite name="UnitTestWithMethodAnnotationsTest" file="/home/brian/Projects/parallel-phpunit/test/fixtures/tests/UnitTestWithMethodAnnotationsTest.php" tests="3" assertions="3" failures="1" errors="0" time="0.001119">
-            <testcase name="testTruth" class="UnitTestWithMethodAnnotationsTest" file="/home/brian/Projects/parallel-phpunit/test/fixtures/tests/UnitTestWithMethodAnnotationsTest.php" line="7" assertions="1" time="0.000341"/>
-            <testcase name="testFalsehood" class="UnitTestWithMethodAnnotationsTest" file="/home/brian/Projects/parallel-phpunit/test/fixtures/tests/UnitTestWithMethodAnnotationsTest.php" line="" assertions="1" time="0.000402">
-                <failure type="PHPUnit\Framework\ExpectationFailedException">UnitTestWithMethodAnnotationsTest::testFalsehood
-                    Failed asserting that true is false.
-
-                    /home/brian/Projects/parallel-phpunit/test/fixtures/tests/UnitTestWithMethodAnnotationsTest.php:18
-                </failure>
-            </testcase>
-            <testcase name="testArrayLength" class="UnitTestWithMethodAnnotationsTest" file="/home/brian/Projects/parallel-phpunit/test/fixtures/tests/UnitTestWithMethodAnnotationsTest.php" line="25" assertions="1" time="0.000376"/>
-        </testsuite>
+  <testsuite name="" tests="13" assertions="35" errors="0" warnings="0" failures="0" skipped="0" time="0.087365">
+    <testsuite name="Unit" tests="12" assertions="34" errors="0" warnings="0" failures="0" skipped="0" time="0.002299">
+      <testsuite name="Tests\Unit\ExampleTest" file="/home/cao.quy.dang/dev/test-sun-ci/tests/Unit/ExampleTest.php" tests="1" assertions="1" errors="0" warnings="0" failures="0" skipped="0" time="0.001865">
+        <testcase name="testBasicTest" class="Tests\Unit\ExampleTest" classname="Tests.Unit.ExampleTest" file="/home/cao.quy.dang/dev/test-sun-ci/tests/Unit/ExampleTest.php" line="14" assertions="1" time="0.001865"/>
+      </testsuite>
+      <testsuite name="Tests\Unit\UnitTest" file="/home/cao.quy.dang/dev/test-sun-ci/tests/Unit/UnitTest.php" tests="11" assertions="33" errors="0" warnings="0" failures="0" skipped="0" time="0.000434">
+        <testcase name="testBasicTest" class="Tests\Unit\UnitTest" classname="Tests.Unit.UnitTest" file="/home/cao.quy.dang/dev/test-sun-ci/tests/Unit/UnitTest.php" line="14" assertions="3" time="0.000235"/>
+        <testcase name="testBasic" class="Tests\Unit\UnitTest" classname="Tests.Unit.UnitTest" file="/home/cao.quy.dang/dev/test-sun-ci/tests/Unit/UnitTest.php" line="21" assertions="3" time="0.000030"/>
+        <testcase name="testNoBasic" class="Tests\Unit\UnitTest" classname="Tests.Unit.UnitTest" file="/home/cao.quy.dang/dev/test-sun-ci/tests/Unit/UnitTest.php" line="28" assertions="3" time="0.000021"/>
+        <testcase name="testSuperBasic" class="Tests\Unit\UnitTest" classname="Tests.Unit.UnitTest" file="/home/cao.quy.dang/dev/test-sun-ci/tests/Unit/UnitTest.php" line="35" assertions="3" time="0.000024"/>
+        <testcase name="testSuperBasic1" class="Tests\Unit\UnitTest" classname="Tests.Unit.UnitTest" file="/home/cao.quy.dang/dev/test-sun-ci/tests/Unit/UnitTest.php" line="42" assertions="3" time="0.000020"/>
+        <testcase name="testSuperBasic2" class="Tests\Unit\UnitTest" classname="Tests.Unit.UnitTest" file="/home/cao.quy.dang/dev/test-sun-ci/tests/Unit/UnitTest.php" line="49" assertions="3" time="0.000018"/>
+        <testcase name="testSuperBasic3" class="Tests\Unit\UnitTest" classname="Tests.Unit.UnitTest" file="/home/cao.quy.dang/dev/test-sun-ci/tests/Unit/UnitTest.php" line="56" assertions="3" time="0.000018"/>
+        <testcase name="testSuperBasic4" class="Tests\Unit\UnitTest" classname="Tests.Unit.UnitTest" file="/home/cao.quy.dang/dev/test-sun-ci/tests/Unit/UnitTest.php" line="63" assertions="3" time="0.000017"/>
+        <testcase name="testSuperBasic5" class="Tests\Unit\UnitTest" classname="Tests.Unit.UnitTest" file="/home/cao.quy.dang/dev/test-sun-ci/tests/Unit/UnitTest.php" line="70" assertions="3" time="0.000016"/>
+        <testcase name="testSuperBasic6" class="Tests\Unit\UnitTest" classname="Tests.Unit.UnitTest" file="/home/cao.quy.dang/dev/test-sun-ci/tests/Unit/UnitTest.php" line="77" assertions="3" time="0.000018"/>
+        <testcase name="testSuperBasic7" class="Tests\Unit\UnitTest" classname="Tests.Unit.UnitTest" file="/home/cao.quy.dang/dev/test-sun-ci/tests/Unit/UnitTest.php" line="84" assertions="3" time="0.000017"/>
+      </testsuite>
     </testsuite>
+    <testsuite name="Feature" tests="1" assertions="1" errors="0" warnings="0" failures="0" skipped="0" time="0.085066">
+      <testsuite name="Tests\Feature\ExampleTest" file="/home/cao.quy.dang/dev/test-sun-ci/tests/Feature/ExampleTest.php" tests="1" assertions="1" errors="0" warnings="0" failures="0" skipped="0" time="0.085066">
+        <testcase name="testBasicTest" class="Tests\Feature\ExampleTest" classname="Tests.Feature.ExampleTest" file="/home/cao.quy.dang/dev/test-sun-ci/tests/Feature/ExampleTest.php" line="15" assertions="1" time="0.085066"/>
+      </testsuite>
+    </testsuite>
+  </testsuite>
 </testsuites>
