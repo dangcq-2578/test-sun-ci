@@ -66,4 +66,26 @@ class UnitTest extends TestCase
         $this->assertFalse(false);
         $this->assertEquals([], []);
     }
+
+    public function testSuperBasic5()
+    {
+        $this->assertTrue(true);
+        $this->assertFalse(false);
+        $this->assertEquals([], []);
+    }
+
+    public function testSuperBasic6()
+    {
+        $this->assertTrue(true);
+        $this->assertFalse(false);
+        $this->assertEquals([], []);
+    }
+
+    public function testSuperBasic7()
+    {
+        $this->assertTrue(true);
+        $this->assertFalse(false);
+        $this->assertEquals([], []);
+    }
+
 }
